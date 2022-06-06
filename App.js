@@ -1,6 +1,6 @@
 
 import { useState } from 'react'
-
+import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, ImageBackground, SafeAreaView } from 'react-native';
 import Colors from './constants/Colors';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -57,6 +57,9 @@ export default function App() {
   
 
   return (
+    
+    <>
+    <StatusBar style='light'/>
     <LinearGradient style={styles.rootScreen}
       colors={[Colors.accent500, Colors.primary700]}>
       <ImageBackground
@@ -67,6 +70,8 @@ export default function App() {
         <SafeAreaView style={styles.rootScreen}>{screen}</SafeAreaView>
       </ImageBackground>
     </LinearGradient>
+    </>
+    
   );
 }
 
@@ -75,7 +80,7 @@ const styles = StyleSheet.create({
      flex: 1,
    },
    imageStyle:{
-     opacity: 0.45,
+     opacity: 0.25,
    }
 
 });

@@ -42,7 +42,7 @@ function StartGameScreen({ onPickNumber }) {
     }
   }
 
-  const marginTopDistance = height < 400 ? 30 : 100;
+  const marginTopDistance = height < 500 ? 30 : 100;
 
   return (
     <ScrollView style={styles.screen}>

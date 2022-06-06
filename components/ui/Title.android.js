@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
         borderColor: 'white',
         // borderWidth: Platform.OS ? 0 : 2,
         //borderWidth: Platform.select({ios: 0, android: 2}),
+        marginTop: 50,
         borderWidth: 3,
         borderRadius: 24,
         padding: 12,
